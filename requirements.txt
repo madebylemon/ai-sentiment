@@ -1,0 +1,10 @@
+flask
+flask-cors
+deepface
+pillow
+numpy
+textblob
+gtts
+speechrecognition
+google-generativeai
+pydub

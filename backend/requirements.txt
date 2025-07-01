@@ -1,0 +1,7 @@
+Flask
+werkzeug
+SpeechRecognition
+textblob
+gTTS
+pydub
+flask_cors 

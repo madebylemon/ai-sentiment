@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sentiment Therapy App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="/" class="nav-link">Home</a>
+        <a href="/therapist" class="nav-link">Therapist</a>
+    </div>
+    <div class="container chat-flex-layout">
+        <div class="therapist-centerpiece">
+            <img id="aiAvatar" src="/static/ai_avatar_idle.png" alt="AI Therapist" class="therapist-img-full">
+        </div>
+        <div class="chat-container-messenger">
+            <div id="chat-messages" class="chat-messages-messenger"></div>
+            <form id="chatForm" autocomplete="off" class="chat-form-messenger">
+                <input type="text" id="chatInput" placeholder="Type your message...">
+                <button type="submit">Send</button>
+            </form>
+            <div id="error" class="error hidden"></div>
+        </div>
+        <div id="webcam-section" class="webcam-bottomright">
+            <video id="webcam" width="240" height="180" autoplay playsinline></video>
+            <canvas id="snapshot" width="240" height="180" style="display:none;"></canvas>
+            <div id="webcamStatus"></div>
+        </div>
+    </div>
+    <script src="/static/therapist_chat.js"></script>
+</body>
+</html>
